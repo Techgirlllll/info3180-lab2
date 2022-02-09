@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<div class = "main">
+
+    <section class="heading">
+        <div><img class ="pic" src="{{ url_for('static',filename='girlinTech.jpg') }}" alt="Main Picture"></div>
+         <h2 class = "name"> Abbigail Parchment </h2>
+         <h1> @abbyparchment_ </h1>
+         <h1>Spanish Town, Jamaica</h1>
+         <h1>{{date}}</h1>
+    </section>
+
+    <section class="nextSection">
+        <p>A self- driven and solution-oriented student with a passion in Software Development and Cyber Security. Adept at motivating and providing educational assistance to others.</p>
+        <section class = "info-container">
+            <div class="description">
+                <p id = "num"> 7 </p>
+                <p class="text">Post</p>
+            </div>
+            <div class="description">
+                <p id = "num"> 100 </p>
+                <p class="text">Following</p>
+            </div>
+            <div class="description">
+                <p id = "num"> 250 </p>
+                <p class="text">Followers</p>
+            </div>
+        </section>
+        <button class= "btn" type="button">Follow</button>
+    </section>
+
+</div>
+{% endblock %}
